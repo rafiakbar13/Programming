@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="clickMe" type="button" value="Click Me" />
+
+    <script>
+      // Event handler,bisa lebih dari satu
+      //   const input = document.getElementById("clickMe");
+      //   input.addEventListener("click", function () {
+      //     input.setAttribute("value", "Clicked");
+      //   });
+
+      //   const input = document.getElementById("clickMe");
+      //   input.addEventListener("click", function () {
+      //     input.setAttribute("value", "Clicked");
+      //   });
+      //   ````````````````````````;
+
+      //   Global event handler
+      const input = document.getElementById("clickMe");
+      input.onclick = function () {
+        input.setAttribute("value", "Clicked");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+handleSubmit
+
+dapetin service_tariff dari service
+dapetin balance dari balance
+
+buat kondisi
+if(balance >= serviceTarif) {
+dispatch(postTransaction)
+}
+
+kondisi 1
+balance: 80.000
+tarif: 40.000
+input: 10.000
+
+return false
+
+kondisi 2: 
+balance: 80.000
+tarif: 40.000
+input: 40.000
+return true

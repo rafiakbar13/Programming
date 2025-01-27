@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstName = "Rafi";
+      let lastName = "Akbar";
+      let nilai = 80;
+      document.write(
+        `Nama Saya adalah ${firstName} ${lastName}, Nilai anda adalah ${
+          nilai > 70
+        }`
+      );
+
+      const multiLine = `
+      Nama Saya Rafi,
+      Sekarang saya kerja sebaga frontend engineer disalah satu perusahaan e-commerce ternama di Indonesia,
+      Selain Bekerja saya juga menjadi freelance dan content creator
+      `;
+      document.writeln("<pre>");
+      document.writeln(multiLine);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic</title>
+    <style>
+      header {
+        background-color: aqua;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: blueviolet;
+        padding: 10px;
+        color: white;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      nav li {
+        float: left;
+      }
+
+      nav li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+      }
+
+      nav li a:hover {
+        background-color: darkslateblue;
+      }
+
+      article {
+        padding: 20px;
+        width: 100%;
+        background-color: bisque;
+      }
+      footer {
+        background-color: cadetblue;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Judul Halaman</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Artikel</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <section>
+      <article>
+        <h1>Belajar HTML</h1>
+        <p>HTML adalah Bhasa Markup</p>
+      </article>
+      <article>
+        <h1>Belajar CSS</h1>
+        <p>CSS adalah styling tampilan website</p>
+      </article>
+    </section>
+    <footer>
+      <p>
+        &copy; 2020 - Semua Hak Dilindungi <time datetime="2023">2023</time>
+      </p>
+    </footer>
+  </body>
+</html>

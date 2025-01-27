@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gtter dan Stter</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(firstName, lastName) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+        }
+        get fullName() {
+          return `${this.firstName} ${this.lastName}`;
+        }
+        set fullName(value) {
+          const result = value.split(" ");
+          this.firstName = result[0];
+          this.lastName = result[1];
+        }
+      }
+
+      const rafi = new Person("Rafi", "Akbar");
+      console.info(rafi);
+      console.info(rafi.fullName);
+
+      rafi.fullName = "Hokuya Omai";
+      console.info(rafi);
+      console.info(rafi.fullName);
+    </script>
+  </body>
+</html>

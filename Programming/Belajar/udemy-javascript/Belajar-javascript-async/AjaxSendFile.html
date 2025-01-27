@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax Send File</title>
+  </head>
+  <body>
+    <form>
+      <label for="username">username</label>
+      <input type="text" id="username" name="username" />
+      <br />
+      <label for="Name">Name</label>
+      <input type="text" id="name" name="Name" />
+      <br />
+      <label for="image">Profile</label>
+      <input type="file" id="image" name="image" />
+      <br />
+      <input type="button" value="Register" id="register" />
+    </form>
+    <h1 id="response"></h1>
+    <script>
+      const register = () => {
+        const ajax = new XMLHttpRequest();
+        ajax.open("POST", "https://eoch9zvisn3jcn5.m.pipedream.net");
+        ajax.onload = function () {
+          const response = document.getElementById("response");
+          response.innerText = ajax.responseText;
+        };
+
+        const form = new FormData();
+        form.append("username", document.getElementById("username").value);
+        form.append("name", document.getElementById("name").value);
+        form.append("image", document.getElementById("image").files[0]);
+
+        ajax.send(form);
+      };
+      document.getElementById("register").onclick = register;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="username">username</label>
+      <input type="text" id="username" name="username" />
+      <br />
+      <label for="password">password</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <input type="button" value="Login" id="login" />
+    </form>
+    <h1 id="response"></h1>
+    <script>
+      function doLogin() {
+        const request = new Request("https://eoch9zvisn3jcn5.m.pipedream.net", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            username: document.getElementById("username").value,
+            password: document.getElementById("password").value,
+          }),
+        });
+        const response = fetch(request);
+        response
+          .then((response) => response.json())
+          .then(function (json) {
+            document.getElementById("response").textContent =
+              JSON.stringify(json);
+          })
+          .catch(function (error) {
+            console.error(error);
+          });
+      }
+      document.getElementById("login").onclick = doLogin;
+    </script>
+  </body>
+</html>

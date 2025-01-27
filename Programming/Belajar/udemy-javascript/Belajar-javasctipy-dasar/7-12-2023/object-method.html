@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object method</title>
+  </head>
+  <body>
+    <script>
+      //   function sayHello(name) {
+      //     console.info("Rafi");
+      //     return `${name}`;
+      //   }
+      //   const nama = sayHello("Akbar");
+      //   console.info(nama);
+
+      //   function sayHello(name) {
+      //     alert(`Hello ${name}`);
+      //   }
+
+      //   const person = {
+      //     name: "Eren",
+      //     sayHello: function (name) {
+      //       alert(`Hello ${name}`);
+      //     },
+      //   };
+
+      const person = {
+        name: "Rafi",
+      };
+      person.sayHello = function (name) {
+        alert(`Hello ${name}`);
+      };
+
+      //   Various call property in object
+      person.sayHello("Akbar");
+      //   const panggil = "sayHello";
+      //   const myName = person[panggil]("Hokuya");
+
+      //   person["sayHello"]("Akbar");
+    </script>
+  </body>
+</html>

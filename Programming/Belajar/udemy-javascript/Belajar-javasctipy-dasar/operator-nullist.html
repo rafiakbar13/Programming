@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Nullist</title>
+  </head>
+  <body>
+    <script>
+      let parameter = undefined;
+
+      let data = parameter;
+      if (data === undefined || data === null) {
+        data = " Nilai default";
+      }
+      document.writeln(`<p>${data}</p>`);
+
+      data ?? "Nilai default";
+      document.writeln(`<p>${data}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+  </head>
+  <body>
+    <div class="rafi"></div>
+    <div class="akbar"></div>
+
+    <script>
+      const rafi = document.querySelector('[class="rafi"]');
+      const akbar = document.querySelector('[class="akbar"]');
+      rafi.textContent = "Rafi";
+      akbar.textContent = "Akbar";
+      rafi.style.backgroundColor = "red";
+      akbar.style.backgroundColor = "blue";
+    </script>
+  </body>
+</html>

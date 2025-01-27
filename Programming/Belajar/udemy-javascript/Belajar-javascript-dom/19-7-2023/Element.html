@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element</title>
+  </head>
+  <body>
+    <!-- <h1 id="title"></h1>
+    <p id="description"></p> -->
+
+    <!-- !Element properties -->
+    <!-- <div class="content" id="content">
+      <h1 class="title" id="title">This is title</h1>
+      <p id="description" class="description">This is description</p>
+    </div> -->
+    <!-- !Element properties end -->
+
+    <div id="content" class="content"></div>
+    <script>
+      //   const title = document.getElementById("title");
+      //   title.textContent = "Belajar Javascript dom";
+      //   console.info(title);
+
+      //   const description = document.getElementById("description");
+      //   description.textContent = "Selamat Belajar";
+      //   console.info(description);
+
+      //   Element Properties
+      //   const content = document.getElementById("content");
+      //   console.info(content.id);
+      //   console.info(content.className);
+      //   console.info(content.tagName);
+      //   Element properties end
+
+      //   Element Methods
+      //   const title = document.getElementById("title");
+      //   title.remove();
+      //   Element Methods end
+
+      //   create element
+      const content = document.getElementById("content");
+      console.info(content);
+      const title = document.createElement("h1");
+      title.textContent = "Belajar javascript dom";
+      content.appendChild(title);
+      const description = document.createElement("p");
+      description.textContent = "Selamat Belajar";
+      content.appendChild(description);
+
+      const images = document.createElement("img");
+      images.setAttribute("src", "https://source.unsplash.com/random");
+      images.setAttribute("alt", "people");
+      content.appendChild(images);
+    </script>
+  </body>
+</html>

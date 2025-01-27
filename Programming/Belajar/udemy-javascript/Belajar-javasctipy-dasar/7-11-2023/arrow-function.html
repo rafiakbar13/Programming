@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow function</title>
+  </head>
+  <body>
+    <script>
+      const sayhello = (name) => console.info(`Hello ${name}`);
+      sayhello("Rafi");
+
+      const sum = (first, second) => first + second;
+      console.info(sum(10, 10));
+      //   Arrow function sebagai parameter
+
+      function giveMeName(callback) {
+        callback("Rafi");
+      }
+      //   Anonymous function
+      //   giveMeName(function (name) {
+      //     console.info(name);
+      //   });
+
+      giveMeName((name) => console.info(`Hello ${name}`));
+    </script>
+  </body>
+</html>

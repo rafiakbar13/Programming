@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi string dan number</title>
+  </head>
+  <body>
+    <script>
+      const value1 = "1";
+      const value2 = 2;
+      const sum = parseInt(value1) + value2;
+      console.info(sum);
+
+      document.writeln(`<p>${parseInt("2.3")}</p>`);
+      document.writeln(`<p>${parseFloat("3.3")}</p>`);
+      document.writeln(`<p>${Number("2.3")}</p>`);
+      document.writeln(`<p>${Number("2")}</p>`);
+
+      const nilai1 = 1;
+      const nilai2 = 2;
+      const total = nilai1.toString() + nilai2.toString();
+      console.info(total);
+
+      document.writeln(`<p>${parseInt("a1salah")}</p>`);
+      document.writeln(`<p>${parseFloat("a3.3text")}</p>`);
+      document.writeln(`<p>${Number("2.3salah")}</p>`);
+    </script>
+  </body>
+</html>

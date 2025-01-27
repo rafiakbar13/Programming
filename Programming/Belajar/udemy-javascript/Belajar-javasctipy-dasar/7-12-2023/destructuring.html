@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      const names = ["Rafi", "Akbar", "Zira", "Eren"];
+      //   const firstName = names[0];
+      //   const lastName = names[1];
+
+      //   const [firstName, lastName, ...other] = names;
+
+      //   console.info(firstName);
+      //   console.info(lastName);
+      //   console.info(other[0]);
+
+      //   const person = {
+      //     firstName: "Rafi",
+      //     lastName: "Akbar",
+      //     address: {
+      //       street: "Birun",
+      //       city: "Bekasi",
+      //       country: "Indonesia",
+      //     },
+      //     hobby: "Belajar Ngoding",
+      //     channel: "Koding",
+      //   };
+
+      //   const {
+      //     firstName,
+      //     lastName,
+      //     address: { city, street, country },
+      //     ...others
+      //   } = person;
+      //   console.info(firstName);
+      //   console.info(lastName);
+      //   console.info(city);
+      //   console.info(street);
+      //   console.info(country);
+      //   console.info(others);
+
+      function displayPerson({ firstName, lastName }) {
+        console.info(firstName);
+        console.info(lastName);
+      }
+      const person = {
+        firstName: "Rafi",
+        lastName: "Akbar",
+      };
+      displayPerson(person);
+
+      function sum([first, second]) {
+        return first + second;
+      }
+      console.info(sum([10, 10]));
+
+      {
+        // Default Value
+        const names = ["Rafi"];
+        const [firstName, lastName = "Hokuya"] = names;
+        console.info(firstName);
+        console.info(lastName);
+      }
+
+      //   const person = {
+      //     nama: "Akbar",
+      //     firstName: ["Hokuya"],
+      //   };
+
+      //   console.info(person.firstName[0]);
+    </script>
+  </body>
+</html>

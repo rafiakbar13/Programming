@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // && true === true = true
+      // && true === false = false
+      // Salah satu false maka hasilnya false
+
+      // || true === true = true
+      // || true === false = true
+      // || false === false = false
+      // Salah satu true maka hasilnya true
+
+      const nilaiUjian = 80;
+      const nilaiUTS = 65;
+
+      const lulusUjian = nilaiUjian > 75;
+      const lulusUTS = nilaiUTS > 70;
+
+      const lulus = lulusUjian && lulusUTS;
+
+      document.writeln(lulus);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute</title>
+  </head>
+  <body>
+    <img src="https://source.unsplash.com/random" id="logo" />
+
+    <script>
+      //   const logo = document.getElementById("logo");
+      //   const src = logo.getAttributeNode("src");
+
+      //   console.info(src);
+      //   console.info(src.value);
+
+      const logo = document.getElementById("logo");
+      const src = logo.getAttribute("src");
+
+      console.info(src);
+
+      logo.setAttribute("alt", "people");
+      console.info(logo);
+    </script>
+  </body>
+</html>

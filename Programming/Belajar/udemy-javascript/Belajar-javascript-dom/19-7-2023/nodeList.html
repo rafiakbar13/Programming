@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Node List</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li id="first">First</li>
+      <li id="second">Second</li>
+      <li id="third">Third</li>
+    </ul>
+    <ul id="name">
+      <li>Muhammad</li>
+      <li>Rafi</li>
+      <li>Akbar</li>
+    </ul>
+
+    <script>
+      //   const list = document.querySelectorAll("li");
+      //   console.info(list);
+      //   const list1 = document.getElementById("menu").childNodes;
+      //   console.info(list1);
+      //   const list2 = document.getElementById("name").childNodes;
+      //   console.info(list2);
+
+      //   Nodelist Live
+      //   const menu = document.getElementById("menu");
+      //   const list = menu.childNodes;
+
+      //   menu.appendChild(document.createElement("li"));
+      //   menu.appendChild(document.createElement("li"));
+
+      //   console.info(list);
+      //   Nodelist Live end
+
+      //   nodelist static
+      let list = document.querySelectorAll("li");
+      const name = document.getElementById("name");
+      name.appendChild(document.createElement("li"));
+      name.appendChild(document.createElement("li"));
+      console.info(list);
+      list = document.querySelectorAll("li");
+      console.info(list);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymous function</title>
+  </head>
+  <body>
+    <script>
+      // 1 dimasukkna ke dalam variabel
+      let say = function (name) {
+        return `Hello ${name}`;
+      };
+      console.info(say("rafi"));
+
+      //   2 dimasukkan kedalam parameter
+      function giveMeName(callback) {
+        callback("Akbar");
+      }
+      giveMeName(function (name) {
+        console.info(`Hi ${name}`);
+      });
+    </script>
+  </body>
+</html>

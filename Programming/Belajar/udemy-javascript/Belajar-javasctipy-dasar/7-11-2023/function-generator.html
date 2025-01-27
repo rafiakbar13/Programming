@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function generator</title>
+  </head>
+  <body>
+    <script>
+      // data yg bisa di iterator, sifatnya lazy
+
+      function* createNames() {
+        yield "Rafi";
+        yield "Akbar";
+      }
+
+      const names = createNames();
+      for (const name of names) {
+        console.info(name);
+      }
+
+      //   function* buatGanjil(value) {
+      //     for (let i = 1; i < value; i++) {
+      //       if (i % 2 === 1) {
+      //         yield i;
+      //       }
+      //     }
+      //   }
+      //   const numbers = buatGanjil(5);
+      //   for (const number of numbers) {
+      //     console.info(number);
+      //   }
+
+      function* buatGenap(value) {
+        for (let i = 1; i < value; i++) {
+          if (i % 2 === 0) {
+            console.info(`perulangan ke ${i}`);
+            yield i;
+          }
+        }
+      }
+      const num = buatGenap(10);
+      for (const n of num) {
+        console.info(n);
+      }
+    </script>
+  </body>
+</html>

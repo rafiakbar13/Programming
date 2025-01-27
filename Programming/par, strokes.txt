@@ -1,0 +1,16 @@
+par, strokes
+
+
+while (num > 0)
+
+while (23 > 0) {
+  rev = 0*10 + (23 % 10)
+  num = math.floor(23 / 10)
+}
+
+return rev === x
+return 2 === 2 true
+
+IF(L = 50 < V = 5) {
+result = result - 
+} 
